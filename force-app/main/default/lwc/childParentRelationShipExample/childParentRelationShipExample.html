@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Product Details">
+        <template if:true={productDetails}>
+            <img src={productDetails.Image} height="200px" width="200px">
+            <div class="slds-p-top_small">
+                <div class="slds-col slds-size_1-of-2" >
+                    <p><b>Price:</b>&nbsp;&nbsp;{productDetails.Price}/-</p>
+                    <lightning-button label="Add" variant="Neutral Button" onclick={handelSentToParent}></lightning-button>
+                </div>
+            </div>
+               <!--\ <div class="slds-col slds-size_1-of-2" >
+                    
+                </div>-->
+            <div class="slds-p-top_small">
+                <p><b>Description:</b>
+                     <br/>&nbsp;&nbsp;&nbsp;&nbsp;{productDetails.Discription}</p>
+            </div>
+        </template>
+
+    </lightning-card>
+    
+</template>
